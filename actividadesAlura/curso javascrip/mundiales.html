@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saltarlinea() {
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+            }
+
+            function imprimir(frase) {
+            document.write(frase);
+            saltarlinea();
+            }
+        var anioM = 1930;
+        var limit = parseInt(prompt("año limite de mundiales"));
+
+        alert("hubo mundial en el : "+anioM)
+        
+        while(anioM<=limit){
+            imprimir("hubo mundial en el : "+anioM)
+            anioM = anioM + 4;
+        }
+        alert("fin")
+
+        
+
+    </script>
+</body>
+</html>
