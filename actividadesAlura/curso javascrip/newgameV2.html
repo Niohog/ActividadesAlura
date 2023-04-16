@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="">
+<input id="boton" type="button" value="verificar">
+<script>
+    
+    var secret = Math.round(Math.random()*10) ;
+    var input = document.querySelector("input");
+    input.focus();
+    function verificar() {
+        if (parseInt(input.value) === secret) {
+            alert("a ti te dicen el mascapito?, porque le acertaste");
+        } else {
+            alert("¡Fallo compai era: "+secret);
+        }
+        input.value="";
+        input.focus();
+    }
+
+    var boton = document.querySelector('#boton');
+    boton.addEventListener('click', verificar);
+</script>
+
+</body>
+</html>
